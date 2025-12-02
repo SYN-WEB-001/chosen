@@ -1,17 +1,26 @@
-import Girl1 from "../../public/Girl1.jpg";
+
 import Card from "./Card.jsx";
+import { useState } from 'react'
 
 export default function PhoneMockUp() {
+
     return (
         <>
 
-           <div className="mockup-phone border-[#ff8938]">
-  <div className="mockup-phone-camera"></div>
-  <div className="mockup-phone-display">
 
-   <Card />
-  </div>
-</div>
+            <div className="mockup-phone border-[#ff8938]">
+                <div className="mockup-phone-camera"></div>
+                <div className="mockup-phone-display">
+
+                    <div className="mockup-phone-display bg-base-100 pb-10">
+                        <div className="h-full overflow-hidden">
+                            <Card />
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
         </>
 
     );

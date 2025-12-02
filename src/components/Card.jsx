@@ -1,22 +1,114 @@
-import Carousel from "../components/Carousel.jsx";
+import mockProfiles from "../components/data/mockProfiles.json";
+import { Heart, X } from "lucide-react";
+import { useState } from "react";
 
 export default function Card() {
-    return (
-        <div className="card bg-white w-auto shadow-sm">
-  <figure>
-    <Carousel />
-  </figure>
-  <div className="card-body">
-    <h2 className="card-title ">Isabella 42 Jahre</h2>
-    <p>Sucht neue Freunde zum Treffen!</p>
-    <div className="card-actions justify-center gap-4">
-      <button className="btn bg-white text-red-700 px-4 rounded-lg">Skip</button>
-       <button className="btn btn-primary">Share</button>
-       <button className="btn btn-primary">Like</button>
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isLiked, setIsLiked] = useState(false);
+
+  const currentProfile = mockProfiles[currentIndex];
+  const hasMoreProfiles = currentIndex < mockProfiles.length;
+
+ const handleNextProfile = () => {
+  setIsLiked(false);
+
+  setCurrentIndex((prev) => {
+    if (prev === mockProfiles.length - 1) {
+      return 0;      // ➤ LOOP: zurück zum ersten Profil
+    }
+    return prev + 1; // ➤ normal zum nächsten
+  });
+};
+
+
+  const handleLike = () => {
+    setIsLiked(true);
+    setTimeout(() => {
+      handleNextProfile();
+    }, 500);
+  };
+
+  const handleSkip = () => {
+    handleNextProfile();
+  };
+
+  return (
+    <div className="w-full h-full flex flex-col justify-between">
+
+      {/* CARD */}
+      <div className="card shadow-xl rounded-xl overflow-hidden bg-white flex-1 flex flex-col">
+
+        {/* Herz Animation */}
+        {isLiked && (
+          <div className="absolute inset-0 flex items-center justify-center z-20 pointer-events-none">
+            <Heart
+              className="text-red-500 w-28 h-28 opacity-0 animate-pulse-grow"
+              fill="currentColor"
+            />
+          </div>
+        )}
+
+        {/* Inhalt */}
+        {hasMoreProfiles ? (
+          <>
+            {/* BILDBEREICH – dynamisch, responsive */}
+            <figure className="w-full flex-1">
+              <img
+                src={currentProfile.imageUrl}
+                alt={currentProfile.name}
+                className="w-full h-full object-cover"
+                onError={(e) => {
+                  e.target.onerror = null;
+                  e.target.src = "https://placehold.co/300x350/6B7280/white?text=Fehler";
+                }}
+              />
+            </figure>
+
+            {/* TEXT */}
+            <div className="p-4 bg-white">
+              <h2 className="text-xl font-bold text-gray-800">
+                {currentProfile.name}
+              </h2>
+              <p className="text-gray-500">{currentProfile.location}</p>
+            </div>
+          </>
+        ) : (
+          <div className="flex flex-col items-center justify-center h-full p-6 text-center">
+            <Heart className="w-16 h-16 text-pink-500 mb-4" />
+            <h2 className="text-xl font-bold">Alle Profile durchgesehen!</h2>
+            <button className="btn btn-primary mt-6" onClick={() => setCurrentIndex(0)}>
+              Neu Starten
+            </button>
+          </div>
+        )}
+      </div>
+
+      {/* BUTTONS */}
+      {hasMoreProfiles && (
+        <div className="flex w-full mt-4 space-x-3 ">
+
+          <button
+            className="btn btn-outline flex-1 "
+            onClick={handleSkip}
+          >
+            <X className="w-5 h-5 mr-2 " />
+            < div className="sm:hidden md:block">Skip</div> 
+          </button>
+
+          <button
+            className="btn flex-1 text-white bg-gradient-to-r from-pink-500 to-purple-600 border-0 hover:from-pink-600 hover:to-purple-700 shadow-md"
+            onClick={handleLike}
+          >
+            <Heart
+              className={`w-5 h-5 mr-2 ${isLiked ? "fill-white" : "fill-none"} transition`}
+              stroke="currentColor"
+            />
+            Like
+          </button>
+
+        </div>
+      )}
+
     </div>
-  </div>
-</div>
-    );
+  );
 }
-//--- skipButtton mit Json anpassen in Zukunft ---//
-//--- likeButtton mit beim click Herz hoch runter dabei noch 10 punkte  ---//

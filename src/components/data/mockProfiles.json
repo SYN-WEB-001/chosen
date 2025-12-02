@@ -1,0 +1,30 @@
+[
+{
+    "id": 1,
+    "name": "Sarah, 28",
+    "location": "Berlin",
+    "imageUrl": "Girl1.jpg",
+    "bgColor": "bg-blue-300"
+  },
+  {
+    "id": 2,
+    "name": "Tom, 31",
+    "location": "2.1 miles away",
+    "imageUrl": "https://placehold.co/400x500/F9945F/white?text=Tom",
+    "bgColor": "bg-orange-300"
+  },
+  {
+    "id": 3,
+    "name": "Lena, 25",
+    "location": "1.8 miles away",
+    "imageUrl": "https://placehold.co/400x500/A0E7A6/white?text=Lena",
+    "bgColor": "bg-green-300"
+  },
+  {
+    "id": 4,
+    "name": "Max, 30",
+    "location": "5.0 miles away",
+    "imageUrl": "https://placehold.co/400x500/E892BF/white?text=Max",
+    "bgColor": "bg-pink-300"
+  }
+]
