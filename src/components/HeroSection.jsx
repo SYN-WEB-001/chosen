@@ -1,6 +1,5 @@
 import PhoneMockUp from "./PhoneMockUp";
 
-
 export default function HeroSection() {
     return (
         <section
