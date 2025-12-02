@@ -9,22 +9,29 @@
   {
     "id": 2,
     "name": "Tom, 31",
-    "location": "2.1 miles away",
-    "imageUrl": "https://placehold.co/400x500/F9945F/white?text=Tom",
+    "location": "Hamburg",
+    "imageUrl": "Tom.png",
     "bgColor": "bg-orange-300"
   },
   {
     "id": 3,
     "name": "Lena, 25",
-    "location": "1.8 miles away",
-    "imageUrl": "https://placehold.co/400x500/A0E7A6/white?text=Lena",
+    "location": "München",
+    "imageUrl": "Lena.png",
     "bgColor": "bg-green-300"
   },
   {
     "id": 4,
     "name": "Max, 30",
-    "location": "5.0 miles away",
-    "imageUrl": "https://placehold.co/400x500/E892BF/white?text=Max",
+    "location": "Berlin",
+    "imageUrl": "Max.png",
+    "bgColor": "bg-pink-300"
+  },
+  {
+    "id": 5,
+    "name": "Ali, 32",
+    "location": "Erding",
+    "imageUrl": "Ali.png",
     "bgColor": "bg-pink-300"
   }
 ]
