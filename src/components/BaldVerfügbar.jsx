@@ -1,7 +1,7 @@
 import React from 'react';
 import { FcAndroidOs } from "react-icons/fc";
-import apple from '../../public/apple.png';
-import windows from '../../public/windows.png';
+import apple from '../icon/apple.png';
+import windows from '../icon/windows.png';
 
 const PlatformsComingSoon = () => {
   return (
