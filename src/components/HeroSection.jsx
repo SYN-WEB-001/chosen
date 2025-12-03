@@ -11,7 +11,7 @@ export default function HeroSection() {
             }}>
             <div className="relative container ml-40 mx-auto px-6">
                 <h1 className="text-6xl font-bold mb-4">Chosen: Für Verbindungen, die zählen.</h1>
-                <h2 className="text-xl mb-8">
+                <h2 className="text-2xl mb-8">
                     Das soziale Netzwerk für tiefgehende Passionen. Schluss mit oberflächlichem Scrollen.
                     Finde dein Tribe – mit Purpose.
                 </h2>
