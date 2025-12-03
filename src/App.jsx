@@ -6,7 +6,7 @@ function App() {
 
 
   return (
-    <div className='bg-blend-color'>
+    <div >
       < Home />
       <Footer />
     </div>
