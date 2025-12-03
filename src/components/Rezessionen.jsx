@@ -2,7 +2,7 @@ import testimonialsData from "./data/testimonials.json";
 
 export default function Rezession() {
   return (
-    <section className="bg-white py-16">
+    <section className="mt-15 bg-white py-16">
       <div className="max-w-4xl mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-10">Erfahrungsberichte</h2>
 

@@ -15,7 +15,7 @@ export default function EarlyAccessForm() {
         // - Benutzerdefinierter Farbverlauf (bg-gradient-br from-[#a77ff8] to-[##e782f0])
         // - Abgerundete Ecken (rounded-3xl)
         // - Schatten (shadow-2xl)
-        <div 
+        <div
             className="
                 p-8 rounded-3xl w-full max-w-sm mx-auto  mt-20
                 shadow-2xl text-black 
@@ -28,9 +28,15 @@ export default function EarlyAccessForm() {
             }}
         >
             {/* Titel */}
-            <h2 className="text-2xl font-semibold mb-6 text-center">
-                Sign up for early access
+            <h2 className="text-2xl font-semibold mb-2 text-center">
+                Jetzt unverbindlich vorregistrieren.
             </h2>
+
+            <p className="text-center text-base text-gray-700 mb-4">
+                Sei einer der ersten, die Chosen tester der App, die dich mit Menschen verbindet,
+                die gerade jetzt in deiner Nähe sind.
+            </p>
+
 
             {/* Formular */}
             <form onSubmit={handleSubmit} className="space-y-4">
@@ -59,9 +65,9 @@ export default function EarlyAccessForm() {
                         shadow-lg
                     "
                     style={{
-                         // Der dunklere, lila Gradient für den Button
-                         background: 'linear-gradient(145deg, #8a5ee0, #cc69e7)',
-                         boxShadow: '0 5px 15px rgba(0, 0, 0, 0.2)'
+                        // Der dunklere, lila Gradient für den Button
+                        background: 'linear-gradient(145deg, #8a5ee0, #cc69e7)',
+                        boxShadow: '0 5px 15px rgba(0, 0, 0, 0.2)'
                     }}
                 >
                     Notify me
