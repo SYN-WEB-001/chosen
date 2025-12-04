@@ -6,7 +6,7 @@ export default function Rezensionen() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
 
       
-        <h2 className="text-3xl md:text-5xl font-bold text-center mb-2 text-gray-900 dark:text-white">
+        <h2 className="text-3xl md:text-5xl font-bold text-center mb-2">
           Erfahrungsberichte.
         </h2>
         <p className="text-center text-2xl font-bold mb-10">
