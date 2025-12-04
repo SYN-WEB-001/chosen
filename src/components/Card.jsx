@@ -9,16 +9,16 @@ export default function Card() {
   const currentProfile = mockProfiles[currentIndex];
   const hasMoreProfiles = currentIndex < mockProfiles.length;
 
- const handleNextProfile = () => {
-  setIsLiked(false);
+  const handleNextProfile = () => {
+    setIsLiked(false);
 
-  setCurrentIndex((prev) => {
-    if (prev === mockProfiles.length - 1) {
-      return 0;      
-    }
-    return prev + 1; 
-  });
-};
+    setCurrentIndex((prev) => {
+      if (prev === mockProfiles.length - 1) {
+        return 0;
+      }
+      return prev + 1;
+    });
+  };
 
 
   const handleLike = () => {
@@ -35,10 +35,10 @@ export default function Card() {
   return (
     <div className="w-full h-full flex flex-col justify-between">
 
-    
+
       <div className="card shadow-xl rounded-xl overflow-hidden bg-white flex-1 flex flex-col">
 
-        
+
         {isLiked && (
           <div className="absolute inset-0 flex items-center justify-center z-20 pointer-events-none">
             <Heart
@@ -48,10 +48,10 @@ export default function Card() {
           </div>
         )}
 
-        
+
         {hasMoreProfiles ? (
           <>
-           
+
             <figure className="w-full flex-1">
               <img
                 src={currentProfile.imageUrl}
@@ -64,7 +64,7 @@ export default function Card() {
               />
             </figure>
 
-           
+
             <div className="p-4 bg-white">
               <h2 className="text-xl font-bold text-gray-800">
                 {currentProfile.name}
@@ -83,16 +83,19 @@ export default function Card() {
         )}
       </div>
 
-     
+
       {hasMoreProfiles && (
         <div className="flex w-full mt-4 space-x-3 ">
 
           <button
-            className="btn hover:border-transparent hover:bg-gray-300 border-black text-black flex-1 m-2 rounded-xl "
+            className="btn flex-1 m-2 rounded-xl 
+             border border-black dark:border-white 
+             hover:border-transparent hover:bg-gray-300"
             onClick={handleSkip}
           >
+
             <X className="w-5 h-5 mr-2 " />
-            < div className="sm:hidden md:block">Skip</div> 
+            < div className="sm:hidden md:block">Skip</div>
           </button>
 
           <button
