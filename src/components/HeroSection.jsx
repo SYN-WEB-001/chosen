@@ -1,5 +1,5 @@
 import PhoneMockUp from "./PhoneMockUp";
-
+import DarkModeToggle from "../components/DarkModeToggle";
 export default function HeroSection() {
     return (
         <section
@@ -10,18 +10,18 @@ export default function HeroSection() {
         >
 
             <div className="absolute inset-0 bg-white/30 backdrop-blur-[1px]"></div>
+           
 
 
             <div className="relative container mx-auto px-4 sm:px-6 lg:px-8">
-
-
+             < DarkModeToggle />
                 <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
 
                     <div className="mb-0 lg:mb-1">
                         <div className="w-full lg:w-3/5 text-center lg:text-left text-gray-900 lg:mb-60">
                             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
 
-                                <span className="bg-gradient-to-br from-pink-500 to-purple-600 bg-clip-text text-transparent">
+                                <span className="text-8xl bg-gradient-to-br from-pink-500 to-purple-600 bg-clip-text text-transparent">
                                     Chosen
                                 </span>
                                 <span className="text-gray-900"> Für Verbindungen, die zählen.</span>
@@ -35,7 +35,7 @@ export default function HeroSection() {
 
 
 
-                        <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center lg:justify-start font-semibold text-black sm:text-base ">
+                        <div className="flex flex-col sm:flex-row gap-4 text-center sm:gap-6 justify-center lg:justify-start font-semibold text-black sm:text-base ">
                             <div className="bg-white/50 p-3 rounded-lg backdrop-blur-md shadow-sm border border-white/20 flex-1">
                                 <p>📍 Sehe in Echtzeit, wer am selben Ort ist.</p>
                             </div>

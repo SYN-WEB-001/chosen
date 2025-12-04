@@ -19,7 +19,12 @@ export default function CTA() {
     return (
         <>
         <div> 
-            
+            <h1 className="text-3xl md:text-5xl font-bold text-center mb-2 mt-30">
+                Wenn du dabei sein willst: jetzt anmelden, bevor die letzten Plätze weg sind.
+                </h1>
+            <p className="text-2xl text-center font-bold mt-2">
+                Wir befinden uns mitten in der Testphase. Die Nachfrage ist hoch – sichere dir einen der letzten freien Plätze.
+                </p>
         </div>
 
 

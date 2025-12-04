@@ -6,9 +6,11 @@ export default function Rezensionen() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
 
       
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900 dark:text-white">
-          Erfahrungsberichte
+        <h2 className="text-3xl md:text-5xl font-bold text-center mb-2 text-gray-900 dark:text-white">
+          Erfahrungsberichte.
         </h2>
+        <p className="text-center text-2xl font-bold mb-10">
+          Über 80 % unserer Beta-Nutzer*innen sagen, dass sie durch CHOSEN neue Kontakte in ihrer echten Umgebung geknüpft haben.</p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {testimonialsData.map(({ quote, name, location, rating, avatarUrl }, idx) => (
