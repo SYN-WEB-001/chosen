@@ -6,18 +6,18 @@ export default function Rezensionen() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
 
       
-        <h2 className="text-3xl md:text-5xl font-bold text-center mb-2">
-          Erfahrungsberichte.
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-2">
+          Erste Erfahrungen aus der Community.
         </h2>
-        <p className="text-center text-2xl font-bold mb-10">
-          Über 80 % unserer Beta-Nutzer*innen sagen, dass sie durch CHOSEN neue Kontakte in ihrer echten Umgebung geknüpft haben.</p>
+        <p className="text-center text-xl font-bold mb-10">
+          Über 80 % unserer Nutzer*innen sagen, dass sie durch CHOSEN <br></br> neue  Kontakte in ihrer echten Umgebung geknüpft haben.</p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {testimonialsData.map(({ quote, name, location, rating, avatarUrl }, idx) => (
 
             <div
               key={idx}
-              className="flex flex-col h-full p-6 md:p-8 shadow-lg hover:shadow-xl transition-shadow rounded-2xl bg-gradient-to-br from-white to-gray-200 text-gray-800 border border-gray-100"
+              className="flex flex-col h-full p- md:p-8 shadow-lg hover:shadow-xl transition-shadow rounded-2xl bg-gradient-to-br from-white to-gray-200 text-gray-800 border border-gray-100"
             >
               <div className="flex items-center gap-4 mb-6">
                 <img
@@ -35,11 +35,11 @@ export default function Rezensionen() {
                 </div>
               </div>
 
-              <p className="italic text-gray-700 mb-6 flex-grow leading-relaxed">
+              <p className="italic text-gray-700 flex-grow leading-relaxed">
                 "{quote}"
               </p>
 
-              <div className="flex gap-1 mt-auto">
+              <div className="flex gap-1">
                 {[...Array(rating)].map((_, i) => (
                   <span key={i} className="text-yellow-500 text-lg">⭐</span>
                 ))}

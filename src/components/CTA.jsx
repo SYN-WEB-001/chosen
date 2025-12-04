@@ -19,11 +19,11 @@ export default function CTA() {
     return (
         <>
         <div> 
-            <h1 className="text-3xl md:text-5xl font-bold text-center mb-2 mt-30">
-                Wenn du dabei sein willst: jetzt anmelden, bevor die letzten Plätze weg sind.
+            <h1 className="text-2xl md:text-4xl font-bold text-center mb-2 mt-40">
+                Wenn du dabei sein willst jetzt anmelden, bevor die letzten Plätze weg sind.
                 </h1>
-            <p className="text-2xl text-center font-bold mt-2">
-                Wir befinden uns mitten in der Testphase. Die Nachfrage ist hoch – sichere dir einen der letzten freien Plätze.
+            <p className="text-xl text-center font-bold mt-2">
+                Wir befinden uns mitten in der Testphase. Die Nachfrage ist hoch, sichere dir einen der letzten freien Plätze.
                 </p>
         </div>
 
@@ -38,9 +38,9 @@ export default function CTA() {
 
                     <h1 className="text-4xl sm:text-5xl lg:text-5xl font-extrabold leading-tight tracking-tight">
                         Early Access sichern!
-                        <span className="block text-white mt-2">Werde eine*r der ersten Nutzer*innen.</span>
                     </h1>
-
+                    <h2><span className="block text-white mt-2 text-4xl">Werde eine*r der ersten Nutzer*innen.</span></h2>
+                    
 
                     <div className="text-lg md:text-xl opacity-90">
                         <p className="mb-4">
@@ -57,14 +57,7 @@ export default function CTA() {
 
 
                 <div className="p-6  bg-gradient-to-br from-pink-500 to-purple-600/70 rounded-2xl self-stretch"> {/* self-stretch damit der Hintergrund die ganze Höhe einnimmt */}
-                    <h2 className="text-2xl font-bold mb-4 text-center leading-tight ttext-white">
-                        Jetzt unverbindlich vorregistrieren.
-                    </h2>
-
-                    <p className="text-center text-base text-white/90 mb-6 leading-relaxed">
-                        Sei eine*r der Ersten und teste <strong className='text-white'>CHOSEN</strong>.
-                    </p>
-
+                   
                     <form onSubmit={handleSubmit} className="flex flex-col space-y-4">
 
                         <input
@@ -97,7 +90,7 @@ export default function CTA() {
                             type="submit"
                             className="w-full text-lg font-bold text-white bg-gradient-to-br from-pink-500 to-purple-600/70 border-0 py-4 mt-4 rounded-xl shadow-lg uppercase tracking-wider hover:bg-amber-300 hover:shadow-xl hover:scale-[1.01] active:scale-95 transition-all duration-200"
                         >
-                            Jetzt Early Access sichern
+                            Jetzt Registrieren
                         </button>
                     </form>
                 </div>
