@@ -31,7 +31,6 @@ export default function HeroSection() {
                         </div>
 
 
-
                         <div className="flex flex-col sm:flex-row gap-4 text-center sm:gap-6 justify-center lg:justify-start text-black sm:text-base ">
                             <div className="bg-white/50 p-3 rounded-lg backdrop-blur-md shadow-sm border border-white/20 flex-1">
                             <h1 className="font-bold mb-1">Begegnungen in Echtzeit!</h1>
