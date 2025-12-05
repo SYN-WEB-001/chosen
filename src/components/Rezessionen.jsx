@@ -5,7 +5,7 @@ export default function Rezensionen() {
     <section className="mt-16 py-12 md:py-20 bg-transparent">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
 
-      
+
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-2">
           Erste Erfahrungen aus der Community.
         </h2>
@@ -26,7 +26,7 @@ export default function Rezensionen() {
                   className="w-14 h-14 rounded-full object-cover border-2 border-white shadow-sm"
                   onError={(e) => {
                     e.target.onerror = null;
-                    e.target.src = "https://placehold.co/100x100?text=User"; 
+                    e.target.src = "https://placehold.co/100x100?text=User";
                   }}
                 />
                 <div>
