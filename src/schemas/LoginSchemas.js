@@ -1,0 +1,16 @@
+import * as yup from "yup";
+
+export default yup.object({
+  name: yup
+    .string().required("Bitte gib deinen Namen ein")
+    .min(2, "Der Name muss mindestens 2 Zeichen lang sein"),
+  email: yup
+    .string()
+    .required("Bitte gib eine Email ein")
+    .min(5, "Email muss mindestens 5 Zeichen lang sein")
+    .matches(/^[^\s@]+@[^\s@]+\.[^\s@]+$/, "Bitte gib eine gültige Email ein"),
+  dein_interesse: yup
+    .string()
+    .required("Bitte gib Dein Interesse ein")
+
+});

@@ -49,7 +49,7 @@ export default function HeroSection() {
 
 
                     <div className="w-full lg:w-2/5 flex justify-center lg:justify-end">
-                        <div className="transform scale-90 sm:scale-70 hover:scale-80 vibrate">
+                        <div className="transform scale-90 sm:scale-70  hover:scale-80 vibrate">
                             <PhoneMockUp />
                         </div>
                     </div>
